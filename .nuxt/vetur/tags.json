@@ -1,0 +1,14 @@
+{
+  "Footer": {
+    "description": "Auto imported from components/global/footer.vue"
+  },
+  "HeaderBar": {
+    "description": "Auto imported from components/global/headerBar.vue"
+  },
+  "DataTableFilterInput": {
+    "description": "Auto imported from components/dataTable/filterInput.vue"
+  },
+  "DataTableHideColumns": {
+    "description": "Auto imported from components/dataTable/hideColumns.vue"
+  }
+}
