@@ -6,9 +6,9 @@
     "description": "Auto imported from components/global/headerBar.vue"
   },
   "DataTableFilterInput": {
-    "description": "Auto imported from components/dataTable/filterInput.vue"
+    "description": "Auto imported from components/dataTable/FilterInput.vue"
   },
   "DataTableHideColumns": {
-    "description": "Auto imported from components/dataTable/hideColumns.vue"
+    "description": "Auto imported from components/dataTable/HideColumns.vue"
   }
 }

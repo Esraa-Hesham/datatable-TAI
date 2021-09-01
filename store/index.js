@@ -9,7 +9,9 @@ export const state = () => {
       phone:true,
       website:true,
     },
-    data:[]
+    data:[],
+    search:"",
+    column:null
   };
 };
 export const getters = {
@@ -20,6 +22,12 @@ export const getters = {
     return state.data;
 
   },
+  getSearch(state){
+    return state.search;
+  },
+  getColumn(state){
+    return state.column;
+  }
 };
 export const mutations = {
   setColumes(state,selectedColumes){
@@ -28,6 +36,12 @@ export const mutations = {
   setApiData(state,data){
     state.data = data
 
+  },
+  setSearch(state,search){
+    return state.search = search;
+  },
+  setColumn(state,column){
+    return state.column = column;
   }
 };
 export const actions = {

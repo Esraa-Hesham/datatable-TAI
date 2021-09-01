@@ -4,73 +4,10 @@
     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
       <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
         <!-- Start Filter field-->
-        <div class="">
-          <select v-model="column">
-            <option :value="null">No Column Filter</option>
-            <option v-for="col in cols" :key="col">{{ col }}</option>
-          </select>
-          <input
-            type="text"
-            v-model="search"
-            placeholder="Search"
-            class="bg-gray-200 focus:bg-white rounded-lg px-4"
-          />
-        </div>
+        <DataTableFilterInput />
         <!-- End Filter field -->
         <!-- Start Hide Columns Section-->
-        <div class="flex items-center justify-center my-5 px-10">
-          <h3>Check The Column To Hide</h3>
-          <div class="form-check mx-10">
-            <input
-              type="checkbox"
-              id="id"
-              value="id"
-              @change="changeColumns"
-              v-model="selectedColumes.id"
-            />
-            <label class="form-check-label"> ID </label>
-          </div>
-          <div class="form-check mx-10">
-            <input
-              type="checkbox"
-              id="username"
-              value="username"
-              @change="changeColumns"
-              v-model="selectedColumes.username"
-            />
-            <label class="form-check-label"> User Name </label>
-          </div>
-          <div class="form-check mx-10">
-            <input
-              type="checkbox"
-              id="email"
-              value="email"
-              @change="changeColumns"
-              v-model="selectedColumes.email"
-            />
-            <label class="form-check-label"> Email </label>
-          </div>
-          <div class="form-check mx-10">
-            <input
-              type="checkbox"
-              id="phone"
-              value="phone"
-              @change="changeColumns"
-              v-model="selectedColumes.phone"
-            />
-            <label class="form-check-label"> Phone </label>
-          </div>
-          <div class="form-check mx-10">
-            <input
-              type="checkbox"
-              id="website"
-              value="website"
-              @change="changeColumns"
-              v-model="selectedColumes.website"
-            />
-            <label class="form-check-label"> Website </label>
-          </div>
-        </div>
+        <DataTableHideColumns />
         <!-- End Hide Columns Section -->
         <div
           class="
@@ -211,25 +148,24 @@
 
 <script>
 export default {
-  data() {
-    return {
-      search: null,
-      column: null,
-    }
-  },
   computed: {
+    search() {
+      return this.$store.getters.getSearch
+    },
+    column() {
+      return this.$store.getters.getColumn
+    },
     selectedColumes() {
       return this.$store.getters.selectedColumes
     },
     data() {
       return this.$store.getters.getApiData
     },
-    cols() {
-      return this.data.length >= 1 ? Object.keys(this.selectedColumes) : []
-    },
     rows() {
       if (!this.data.length) {
         return []
+      } else if (!this.column) {
+        return this.data
       }
 
       return this.data.filter((item) => {
@@ -241,21 +177,13 @@ export default {
             !this.search ||
             (typeof prop === 'string'
               ? prop.toLowerCase().includes(this.search)
-              : prop.toLowerCase().toString(10).includes(this.search))
+              : prop.toString().toLowerCase().includes(this.search))
         )
       })
     },
   },
   mounted() {
-    console.log('helloooooooooooooooo')
     this.$store.dispatch('getData')
   },
-  methods: {
-    changeColumns(event) {
-      this.$store.commit('setColumes', {
-        [event.target.value]: event.target.checked,
-      })
-    },
-  },
 }
-</script>0
+</script>

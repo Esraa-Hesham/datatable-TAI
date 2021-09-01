@@ -1,8 +1,7 @@
 <template>
-  <!-- Navigation -->
-  <header class="bg-gray-800 mb-5">
+  <header class="bg-gray-800 mb-7">
     <div class="">
-      <img class="py-2 mx-5" alt="" src="/assets/TAI.png" />
+      <img class="py-3 mx-5" alt="" src="/assets/TAI.png" />
     </div>
   </header>
 </template>

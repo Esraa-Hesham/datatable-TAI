@@ -8,5 +8,5 @@ You can directly use them in pages and other components without the need to impo
 
 - `<Footer>` | `<footer>` (components/global/footer.vue)
 - `<HeaderBar>` | `<header-bar>` (components/global/headerBar.vue)
-- `<DataTableFilterInput>` | `<data-table-filter-input>` (components/dataTable/filterInput.vue)
-- `<DataTableHideColumns>` | `<data-table-hide-columns>` (components/dataTable/hideColumns.vue)
+- `<DataTableFilterInput>` | `<data-table-filter-input>` (components/dataTable/FilterInput.vue)
+- `<DataTableHideColumns>` | `<data-table-hide-columns>` (components/dataTable/HideColumns.vue)
