@@ -1,12 +1,12 @@
 <!-- Start Hide Columns Section -->
 <template>
   <div class="flex my-5 justify-between">
-    <div class="display-block sm:inline-block">
-      <h3 class="text-indigo-900 text-lg font-medium text-center sm:text-left">
+    <div class="display-block sm:inline-block text-center sm:text-left">
+      <h3 class="text-indigo-900 text-lg font-medium">
         Check The Column To Hide
       </h3>
     </div>
-    <div class="display-block sm:inline-block">
+    <div class="display-block sm:inline-block justify-start sm:justify-end">
       <div class="sm:flex">
         <div class="form-check mx-5 bg-gray-100 px-3 py-2 rounded-xl">
           <input

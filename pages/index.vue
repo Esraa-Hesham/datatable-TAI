@@ -12,6 +12,8 @@
         <!-- Start DataTable -->
         <div
           class="
+            bg-local
+            md:bg-fixed
             shadow
             overflow-hidden
             border-b border-gray-300
