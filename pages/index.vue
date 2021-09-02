@@ -1,11 +1,11 @@
 <!-- Start DataTable -->
 <template>
   <div class="flex flex-col">
+    <!-- Start Filter field-->
+    <DataTableFilterInput />
+    <!-- End Filter field -->
     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
       <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-        <!-- Start Filter field-->
-        <DataTableFilterInput />
-        <!-- End Filter field -->
         <!-- Start Hide Columns Section-->
         <DataTableHideColumns />
         <!-- End Hide Columns Section -->
@@ -13,13 +13,13 @@
           class="
             shadow
             overflow-hidden
-            border-b border-gray-200
+            border-b border-gray-300
             sm:rounded-lg
             my-10
           "
         >
           <table class="min-w-full divide-y divide-gray-200">
-            <thead class="bg-gray-50">
+            <thead class="bg-gray-300">
               <tr>
                 <th
                   scope="col"
