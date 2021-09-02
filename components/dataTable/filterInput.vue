@@ -1,7 +1,16 @@
 <!-- Start Filter Section -->
 <template>
   <div class="px-10 bg-gray-200 mb-3 py-3">
-    <h3 class="float-left text-indigo-900 font-extrabold text-lg text-center">
+    <h3
+      class="
+        float-left
+        text-indigo-900
+        font-extrabold
+        text-lg text-center
+        visible
+        sm-hidden
+      "
+    >
       Users Data Table
     </h3>
     <div class="float-right">
@@ -22,7 +31,7 @@
           font-semibold
           bg-gray-100
           focus:bg-white
-          focus:ring-2 focus:ring-blue-600
+          focus:ring-2 focus:ring-gray-300
           pl-5
           h-9
           rounded-r-xl
@@ -61,6 +70,3 @@ export default {
   },
 }
 </script>
-
-<style>
-</style>

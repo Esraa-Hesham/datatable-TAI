@@ -4,7 +4,7 @@
     <!-- Start Filter field-->
     <DataTableFilterInput />
     <!-- End Filter field -->
-    <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="my-2 overflow-x-auto">
       <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
         <!-- Start Hide Columns Section-->
         <DataTableHideColumns />
@@ -188,3 +188,8 @@ export default {
   },
 }
 </script>
+<style >
+input:focus-visible {
+  outline: none;
+}
+</style>

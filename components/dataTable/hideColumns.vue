@@ -1,10 +1,10 @@
 <!-- Start Hide Columns Section -->
 <template>
-  <div class="flex items-center justify-center my-5 px-10">
-    <h3 class="float-left flex text-indigo-900 text-lg font-medium">
+  <div class="flex my-5 justify-between">
+    <h3 class="flex text-indigo-900 text-lg font-medium">
       Check The Column To Hide
     </h3>
-    <div class="float-right flex">
+    <div class="flex">
       <div class="form-check mx-5 bg-gray-100 px-3 py-2 rounded-xl">
         <input
           type="checkbox"
@@ -76,3 +76,4 @@ export default {
   },
 }
 </script>
+
