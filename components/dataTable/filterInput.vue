@@ -7,8 +7,8 @@
         text-indigo-900
         font-extrabold
         text-lg text-center
-        visible
-        sm-hidden
+        hidden
+        sm:block
       "
     >
       Users Data Table
