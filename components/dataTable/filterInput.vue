@@ -1,3 +1,4 @@
+<!-- Start Filter Section -->
 <template>
   <div class="px-10 bg-gray-200 mb-3 py-3">
     <h3 class="float-left text-indigo-900 font-extrabold text-lg text-center">
@@ -31,6 +32,7 @@
       />
     </div>
   </div>
+  <!-- End Filter Section -->
 </template>
 
 <script>

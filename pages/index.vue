@@ -1,4 +1,4 @@
-<!-- Start DataTable -->
+
 <template>
   <div class="flex flex-col">
     <!-- Start Filter field-->
@@ -9,6 +9,7 @@
         <!-- Start Hide Columns Section-->
         <DataTableHideColumns />
         <!-- End Hide Columns Section -->
+        <!-- Start DataTable -->
         <div
           class="
             shadow

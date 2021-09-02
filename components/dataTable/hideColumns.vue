@@ -1,3 +1,4 @@
+<!-- Start Hide Columns Section -->
 <template>
   <div class="flex items-center justify-center my-5 px-10">
     <h3 class="float-left flex text-indigo-900 text-lg font-medium">
@@ -56,6 +57,7 @@
       </div>
     </div>
   </div>
+  <!-- End Hide Columns Section -->
 </template>
 
 <script>
